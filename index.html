@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Premium Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="app-title">Sky<span>Cast</span></h1>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search location...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+            </div>
+        </header>
+
+        <section class="current-weather">
+            <div class="location-info">
+                <h2 class="location-name">New York City</h2>
+                <p class="location-date">Friday, June 10, 2023</p>
+                <div class="weather-icon">
+                    <i class="fas fa-cloud" style="font-size: 6rem; color: #f39c12;"></i>
+                    <i class="fas fa-sun sun" style="font-size: 3rem; color: #f1c40f;"></i>
+                </div>
+                <div class="temperature">72°F</div>
+                <p class="weather-description">partly cloudy</p>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-wind detail-icon"></i>
+                        <div class="detail-value"></div>
+                        <div class="detail-label">Wind</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint detail-icon"></i>
+                        <div class="detail-value"></div>
+                        <div class="detail-label">Humidity</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-umbrella detail-icon"></i>
+                        <div class="detail-value"></div>
+                        <div class="detail-label">Precip</div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-eye detail-icon"></i>
+                        <div class="detail-value"></div>
+                        <div class="detail-label">Visibility</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-container">
+            <h3 class="section-title">5-Day Forecast</h3>
+            <div class="forecast-days">
+                <div class="forecast-day">
+                    <div class="forecast-day-name">Sat</div>
+                    <i class="fas fa-sun forecast-day-icon sun-animation" style="font-size: 3rem; color: #f1c40f;"></i>
+                    <div class="forecast-temp">
+                        <span class="forecast-temp-max"></span>
+                        <span class="forecast-temp-min"></span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-day-name">Sun</div>
+                    <i class="fas fa-cloud-rain forecast-day-icon rain-animation" style="font-size: 3rem; color: #7f8c8d;"></i>
+                    <div class="forecast-temp">
+                        <span class="forecast-temp-max">68°</span>
+                        <span class="forecast-temp-min">62°</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-day-name">Mon</div>
+                    <i class="fas fa-cloud-sun-rain forecast-day-icon mix-animation" style="font-size: 3rem; color: #95a5a6;"></i>
+                    <div class="forecast-temp">
+                        <span class="forecast-temp-max">71°</span>
+                        <span class="forecast-temp-min">63°</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-day-name">Tue</div>
+                    <i class="fas fa-sun forecast-day-icon" style="font-size: 3rem; color: #f1c40f;"></i>
+                    <div class="forecast-temp">
+                        <span class="forecast-temp-max">74°</span>
+                        <span class="forecast-temp-min">65°</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <div class="forecast-day-name">Wed</div>
+                    <i class="fas fa-cloud forecast-day-icon cloud-animation" style="font-size: 3rem; color: #bdc3c7;"></i>
+                    <div class="forecast-temp">
+                        <span class="forecast-temp-max">70°</span>
+                        <span class="forecast-temp-min">64°</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-container">
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt" style="font-size: 5rem; color: var(--accent-color);"></i>
+            </div>
+        </section>
+    </div>
+<script src="app.js"></script>
+    
+</body>
+</html>
