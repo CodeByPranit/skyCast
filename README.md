@@ -1,1 +1,36 @@
 # skyCast
+
+1. **HTML** – Structure for the app:
+
+   * A header with app title and search bar.
+   * A section to display the current weather, temperature, location, and details like wind, humidity, etc.
+   * A 5-day forecast grid.
+   * A map placeholder section.
+
+2. **CSS** – Styling for premium look:
+
+   * Uses variables (`--primary-color`, `--accent-color`) for easy theme control.
+   * Gradient background and glassmorphism effect using `backdrop-filter`.
+   * Animations for icons like sun rotation, clouds floating, and raindrops.
+   * Responsive design using media queries for mobile screens.
+
+3. **JavaScript** – Functionality:
+
+   * **Theme toggle** button switches between dark and light modes.
+   * **Weather API fetch**: Calls `https://api.weatherapi.com/v1/forecast.json` to get weather details for 5 days.
+   * **Dynamic UI update**: Updates temperature, weather conditions, icons, and forecast based on the API data.
+   * **Search functionality**: User can type a city and press search or enter to get updated weather data.
+   * Helper functions like `formatDate()` and `updateWeatherIcon()` for displaying data cleanly.
+
+---
+
+How to Make It Simple?
+
+To simplify:
+
+* **Remove animations and extra styles** (only basic colors and font).
+* **Skip the forecast section** and show only current weather.
+* **Remove theme toggle** (keep a single theme).
+* **Show only essential details** like temperature, city name, and weather condition.
+* **Keep only one fetch API call** for current weather, not 5-day forecast.
+
